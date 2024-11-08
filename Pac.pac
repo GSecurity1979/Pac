@@ -8,35 +8,8 @@ var adRegex = new RegExp(
 
 function FindProxyForURL(url, host) {
    if (
-          shExpMatch(host, "*.forum.hr") ||
-          shExpMatch(host, "forum.hr") ||
-          shExpMatch(host, "*.forum.pcekspert.com") ||
-          shExpMatch(host, "forum.pcekspert.com") ||
-          shExpMatch(host, "*.dnevnik.hr") ||
-          shExpMatch(host, "dnevnik.hr") ||
-          shExpMatch(host, "*.novavideo.dnevnik.hr") ||
-          shExpMatch(host, "novavideo.dnevnik.hr") ||
-          shExpMatch(host, "*.novatv.dnevnik.hr") ||
-          shExpMatch(host, "novatv.dnevnik.hr") ||
-          shExpMatch(host, "*.dnevnik.hr") ||
-          shExpMatch(host, "dnevnik.hr") ||
-          shExpMatch(host, "*.hrt.hr") ||
-          shExpMatch(host, "hrt.hr") ||
-          shExpMatch(host, "*.rtl.hr") ||
-          shExpMatch(host, "rtl.hr") ||
-          shExpMatch(host, "srce.unizg.hr") ||
-          shExpMatch(host, "*.srce.unizg.hr") ||
           shExpMatch(host, "instrumenttactics.com") ||
-          shExpMatch(host, "*.instrumenttactics.com") ||
-          shExpMatch(host, "*.discord.com/channels/889102180332732436") ||
-          shExpMatch(host, "*.discord.com/channels/452237221840551938") ||
-          shExpMatch(host, "*.discord.com/channels/1128414431085346897") ||
-          shExpMatch(host, "*.discord.com/channels/567592181905489920") ||
-          shExpMatch(host, "*.discord.com/channels/549448381613998103") ||
-          shExpMatch(host, "*.discord.com/channels/150662382874525696") ||
-          shExpMatch(host, "*.discord.com/channels/731641286389661727") ||
-          shExpMatch(host, "*.discord.com/channels/246414844851519490") ||
-          shExpMatch(host, "*.discord.com/channels/240880736851329024")
+          shExpMatch(host, "*.instrumenttactics.com")
      ) {
            return "PROXY 127.0.0.1";
         }
